@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrow - AccessCart</title>
+    <link rel="stylesheet" href="lend.css">
+</head>
+<body>
+    <header>
+        <h1>AccessCart</h1>
+        <div class="nav-buttons">
+            <button id="home-btn">Home</button>
+            <button id="help-btn">Help</button>
+        </div>
+    </header>
+    <main>
+        <form class="borrow-form">
+            <h2>Borrow Account</h2>
+            <div class="input-group">
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                    <option value="educational">Educational</option>
+                    <option value="ott">OTT</option>
+                    <option value="business">Business</option>
+                    <option value="ecommerce">eCommerce</option>
+                    <option value="gaming">Gaming</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="website-name">Name of Website</label>
+                <input type="text" id="website-name" name="website-name" required>
+            </div>
+            <button id="search" type="submit">Search</button>
+        </form>
+    </main>
+    <div id="help-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Help</h2>
+            <p>For assistance, contact us at:</p>
+            <p>Email: help@accesscart.com</p>
+            <p>Phone: +1234567890</p>
+        </div>
+    </div>
+    <script src="borrow.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main - AccessCart</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to AccessCart</h1>
+        <div class="profile">
+            <span id="username">User Name</span>
+            <img src="profile.png" alt="Profile Icon" class="profile-icon" id="profile-icon">
+            <div class="profile-options" id="profile-options">
+                <ul>
+                    <li>Age: <input type="number" id="age" name="age"></li>
+                    <li>Gender: 
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </li>
+                    <li>Address: <input type="text" id="address" name="address"></li>
+                    <li>Profile Picture: <input type="file" id="profile-picture" name="profile-picture"></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <img src="logo.png" alt="AccessCart Logo" class="main-logo">
+        <h2>How can we help you?</h2>
+        <div class="buttons">
+            <button id="borrow-btn">Borrow</button>
+            <button id="lend-btn">Lend</button>
+        </div>
+    </main>
+    <footer>
+        <p>Your safety and privacy are our utmost priority. We ensure all transactions are secure and your data is protected.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
